@@ -1,12 +1,15 @@
 import { fetchProjects } from "./api/fetchProjects"
 
-function index(){
+const index = async () => {
   try{
-    
-    fetchProjects()
+    // const fetched = await fetch(url);
+    // const results = await fetched.json();
+    // const projects = results;
+
+    // fetchProjects(projects)
 
   }catch(error){
 
   }
-}
+};
 index()

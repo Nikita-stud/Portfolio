@@ -1,3 +1,3 @@
-export function fetchProjects(){
+export const fetchProjects = () =>{
 
-}
+};
