@@ -1,4 +1,5 @@
 import { fetchProjects } from "./api/fetchProjects"
+import { catchAndDisplay } from "./ui/catchAndDisplay";
 
 const index = async () => {
   try{
@@ -9,7 +10,7 @@ const index = async () => {
     // fetchProjects(projects)
 
   }catch(error){
-
+    catchAndDisplay();
   }
 };
 index()
