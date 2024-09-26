@@ -1,4 +1,4 @@
-import { fetchProjects } from "./api/fetchProjects"
+// import { fetchProjects } from "./api/fetchProjects"
 import { catchAndDisplay } from "./ui/catchAndDisplay";
 
 const index = async () => {
