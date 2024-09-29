@@ -1,16 +1,11 @@
-// import { fetchProjects } from "./api/fetchProjects"
-import { catchAndDisplay } from "./ui/catchAndDisplay";
+import { resizeImg } from "./ui/resizeImg.js";
 
-const index = async () => {
+function index(){
   try{
-    // const fetched = await fetch(url);
-    // const results = await fetched.json();
-    // const projects = results;
-
-    // fetchProjects(projects)
+    resizeImg()
 
   }catch(error){
-    catchAndDisplay();
+    // catchAndDisplay();
   }
 };
 index()
