@@ -1,6 +1,7 @@
 export function resizeImg(){
   const mainImgContainer = document.getElementById("main-img_container");
   const secondaryImgContainer = document.getElementById("inner-frame_img");
+  const carouselHeader = document.getElementById("carousel_header");
 
 
 
@@ -24,7 +25,8 @@ export function resizeImg(){
       let adjustPosition = window.innerWidth / 170;
       let adjustWidth =window.innerWidth / 2.8;
       let adjustHeight =window.innerWidth / 4;
-  
+
+      carouselHeader.style.top= `${window.innerWidth / 85 +10}%`;
       secondaryImgContainer.style.width = `${adjustWidth}px`;
       secondaryImgContainer.style.height = `${adjustHeight}px`;
       secondaryImgContainer.style.top = `${adjustPosition}%`;

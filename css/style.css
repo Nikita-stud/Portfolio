@@ -96,6 +96,13 @@
   font-family: var(--font-titles);
 }
 
+
+
+
+
+
+
+
 /* ----- Error Message -----*/
 .displayError{
   width: 100%;
@@ -124,6 +131,15 @@
     top: 25%;
     right: 7%;
   }
+  /* ----- Carousel -----*/
+  .carousel_header{
+    color: var(--white);
+    font-family: var(--font-titles);
+    font-size: 2.5rem;
+    position: absolute;
+    top: 20%;
+    left: 10%;
+  }
 
 }
 @media (min-width:1200px){
@@ -140,6 +156,12 @@
     font-size: 3rem;
     top: 30%;
     right: 17%;
+  }
+  /* ----- Carousel -----*/
+  .carousel_header{
+    font-size: 3rem;
+    top: 26.8%;
+    left: 21.5%;
   }
 
 }
