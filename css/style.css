@@ -113,10 +113,22 @@
 
 
 @media (min-width:834px){
-  /* ----- Main Page Pictures -----*/
-  .main-img_container{
+  h1,h2,h3,h4,h5,h6{
+    color: var(--white);
+    font-size: var(--font-size-tablet-titles);
+    font-family: var(--font-titles);
+  }
+  p{
+    color: var(--white);
+    font-size: var(--font-size-tablet-readable);
+    font-family: var(--font-readable-text);
+  }
+  .main-img_container, .inner-frame_img, .inner-frame_img:hover, .main_header, .main-img_text-active, .carousel_header, .about_header{
     transition: 1s ease-out;
   }
+
+
+  /* ----- Main Page Pictures -----*/
   .frame_img{
     background-image: url("../images/frame.png");
     width: 700px;
@@ -146,11 +158,9 @@
     height: 320px;
     transform: rotate(3deg);
     cursor: help;
-    transition: 1s ease-out;
   }
   .inner-frame_img:hover{
     opacity: 0.8;
-    transition: 1s ease-out;
   }
   .inner-frame_img-active{
     width: 640px;
@@ -167,11 +177,8 @@
   /* ----- Main Page Header -----*/
   .main_header{
     z-index: 3;
-    font-family: var(--font-titles);
-    transition: 1s ease-out;
     font-size: 2.5rem;
     width: 300px;
-    color: var(--white);
     position: absolute;
     top: 10%;
     right: 11%;
@@ -183,9 +190,6 @@
   /* ----- Main Page Invisible Text After Click -----*/
   .left-main-img_text, .right-main-img_text{
     position: absolute;
-    color: var(--white);
-    font-family: var(--font-readable-text);
-    font-size: var(--font-size-tablet-readable);
     z-index: 2;
     border-radius: 10px;
     opacity: 0;
@@ -194,7 +198,6 @@
     opacity: 0;
   }
   .main-img_text-active{
-    transition: 1s ease-out;
     opacity: 1;
   }
   .left-main-img_text{
@@ -225,9 +228,6 @@
     z-index: 3;
   } */
   .carousel_header{
-    transition: 1s ease-out;
-    color: var(--white);
-    font-family: var(--font-titles);
     font-size: 2.5rem;
     margin-left: 200px;
     padding: 20px;
@@ -264,10 +264,6 @@
       top: 87%;
     }
     .about_header{
-      transition: 1s ease-out;
-      color: var(--white);
-      font-size: var(--font-size-tablet-titles);
-      font-family: var(--font-titles);
       position: absolute;
       top: 40%;
       left: 11%;
@@ -289,9 +285,19 @@
 
 
 @media (min-width:1200px){
+  h1,h2,h3,h4,h5,h6{
+    font-size: var(--font-size-desktop-titles);
+  }
+  p{
+    font-size: var(--font-size-desktop-readable);
+  }
+  .main-img_container, .main_header, .carousel_header, .about_header{
+    transition: 0.7s ease-in;
+  }
+
+
   /* ----- Main Page Pictures -----*/
   .main-img_container{
-    transition: 0.7s ease-in;
     top: -50px;
   }
   .frame_img{
@@ -301,9 +307,6 @@
     background-color: black;
   }
     /* ----- Main Page Invisible Text After Click -----*/
-    .left-main-img_text, .right-main-img_text{
-      font-size: var(--font-size-desktop-readable);
-    }
     .left-main-img_text{
       background-image: none;
       padding: 25px 10px 40px 25px;
@@ -320,7 +323,6 @@
     }
     /* ----- Main Page Header -----*/
   .main_header{
-    transition: 0.7s ease-in;
     font-size: 3rem;
     top: 12%;
     right: 11%;
@@ -331,22 +333,19 @@
     height: 650px;
   }
   .carousel_header{
-    transition: 0.7s ease-in;
     font-size: 3rem;
     margin-left: 250px;
   }
 
-      /* ----- About me  -----*/
+   /* ----- About me  -----*/
       .about-me_container{
         background-image: 
         linear-gradient(to bottom, rgba(15, 14, 14, 0) 0%,rgba(15, 14, 14, 0.1) 20%, rgba(15, 14, 14, 0.6) 40%, rgba(15, 14, 14, 0.8) 50%,rgba(15, 14, 14, 1) 60%, rgba(15, 14, 14, 1) 70%, rgba(15, 14, 14, 1) 100%);  
         top: 130%;    
       }
       .about_header{
-        transition: 0.7s ease-in;
-        font-size: var(--font-size-desktop-titles);
         top: 50%;
         left: 11%;
-      }
+      }'
 
 }
