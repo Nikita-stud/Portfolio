@@ -19,6 +19,7 @@
 
 :root{
   --white: #F5F6F1;
+  --black: rgba(15, 14, 14);
   --font-titles: "Julius Sans One";
   --font-readable-text: Helvetica, sans-serif, Arial, Helvetica;
   --font-size-tablet-titles: 2.5rem;
@@ -214,18 +215,15 @@
     top: 6%;
     left: 57%;
   }
-
-
-
   /* ----- Carousel -----*/
-  .carousel_container{
+  /* .carousel_container{
     position: absolute;
     top: 650px;
     width: 100%;
     height: 450px;
     background-color: rgba(240, 248, 255, 0.178);
     z-index: 3;
-  }
+  } */
   .carousel_header{
     transition: 1s ease-out;
     color: var(--white);
@@ -252,7 +250,44 @@
     left: 20%;
   } */
 
+
+
+
+    /* ----- About me  -----*/
+    .about-me_container{
+      background-image: 
+      linear-gradient(to bottom, rgba(15, 14, 14, 0) 0%,rgba(15, 14, 14, 0.3) 20%, rgba(15, 14, 14, 0.8) 40%, rgba(15, 14, 14, 1) 50%,rgba(15, 14, 14, 1) 60%, rgba(15, 14, 14, 1) 70%, rgba(15, 14, 14, 1) 100%);
+      position: absolute;
+      z-index: 4;
+      width: 100%;
+      height: 1400px;
+      top: 87%;
+    }
+    .about_header{
+      transition: 1s ease-out;
+      color: var(--white);
+      font-size: var(--font-size-tablet-titles);
+      font-family: var(--font-titles);
+      position: absolute;
+      top: 40%;
+      left: 11%;
+    }
+
+
+
+
+
+
+
+
 }
+
+
+
+
+
+
+
 @media (min-width:1200px){
   /* ----- Main Page Pictures -----*/
   .main-img_container{
@@ -300,5 +335,18 @@
     font-size: 3rem;
     margin-left: 250px;
   }
+
+      /* ----- About me  -----*/
+      .about-me_container{
+        background-image: 
+        linear-gradient(to bottom, rgba(15, 14, 14, 0) 0%,rgba(15, 14, 14, 0.1) 20%, rgba(15, 14, 14, 0.7) 40%, rgba(15, 14, 14, 0.8) 50%,rgba(15, 14, 14, 1) 60%, rgba(15, 14, 14, 1) 70%, rgba(15, 14, 14, 1) 100%);  
+        top: 120%;    
+      }
+      .about_header{
+        transition: 0.7s ease-in;
+        font-size: var(--font-size-desktop-titles);
+        top: 50%;
+        left: 11%;
+      }
 
 }
