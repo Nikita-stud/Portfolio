@@ -271,6 +271,7 @@
 
   /* ----- Footer  -----*/
   .contact_container{
+    padding: 11%;
     width: 100%;
     height: 500px;
     margin-top: -50px;
@@ -278,11 +279,27 @@
     position: relative;
   }
   .contact_header{
-    position: absolute;
-    top: 20%;
-    left: 11%;
   }
-
+  .contact_text{
+    margin-top: 35px;
+  }
+  footer nav{
+    margin-top: 35px;
+    color: var(--white);
+  }
+  footer nav ul{
+    display: flex;
+    justify-content: space-between;
+    
+  }
+  footer nav ul li{
+    font-size: var(--font-size-tablet-readable);
+    font-family: var(--font-titles);
+  }
+  footer nav ul li i{
+    font-size: 1.5rem;
+    padding-right: 5px;
+  }
 
 
 
