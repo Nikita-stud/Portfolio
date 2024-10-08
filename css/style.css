@@ -269,7 +269,19 @@
       left: 11%;
     }
 
-
+  /* ----- Footer  -----*/
+  .contact_container{
+    width: 100%;
+    height: 500px;
+    margin-top: -50px;
+    background-color: var(--black);
+    position: relative;
+  }
+  .contact_header{
+    position: absolute;
+    top: 20%;
+    left: 11%;
+  }
 
 
 
@@ -346,6 +358,6 @@
       .about_header{
         top: 50%;
         left: 11%;
-      }'
+      }
 
 }
