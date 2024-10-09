@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en-US">
 <head>
-  <title>My Portfolio | All My Projects</title>
+  <title>My Portfolio | Nikita Fedorov</title>
   <meta name="description" content="Come take a look at around, I have collected all created projects on one page">
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -21,11 +21,11 @@
 
   <header>
     <div class="header_container">
-      <a href="/" class="logo_container"><img src="images/logo.png" alt="Logo of the page which is my name Nikita Fedorov"></a>
+      <a href="#Hello" class="logo_container"><img src="images/logo.png" alt="Logo of the page which is my name Nikita Fedorov"></a>
       <nav>
         <ul>
-          <li><a href="">works</a></li>
           <li><a href="#about-me">about</a></li>
+          <li><a href="#works">works</a></li>
           <li><a href="#contact">contact</a></li>
         </ul>
       </nav>
@@ -33,7 +33,7 @@
   </header>
 
   <main>
-    <div class="main-img_wrapper">
+    <div class="main-img_wrapper" id="Hello">
       <div class="main-img_container" id="main-img_container">
         <div class="frame_img" id="frame_img">
           <div class="inner-frame_img" id="inner-frame_img">
@@ -61,6 +61,11 @@
     <section class="about-me_container">
       <h3 class="about_header" id="about-me">ABOUT ME</h3>
     </section>
+
+    <section class="projects_container">
+      <h4 class="projects_header" id="works">PROJECTS</h3>
+    </section>
+
   </main>
   
   <footer>
@@ -68,10 +73,13 @@
       <h4 class="contact_header">CONTACT ME</h4>
       <p class="contact_text">Feel free to send email or call anytime for a chit chat. <br>If you have an idea but dont know where to start, we will figure it out together. <br> The most important step is to take that first step!</p>
       <nav>
-        <ul>
-          <li><i class="fa-solid fa-location-dot"></i> Location</li>
+        <ul class="footer-aspects">
           <li><i class="fa-solid fa-envelope"></i> Email</li>
           <li><i class="fa-solid fa-phone"></i> Phone</li>
+        </ul>
+        <ul class="footer-data">
+          <li>nikita151998de@gmail.com</li>
+          <li>+47 45588474</li>
         </ul>
       </nav>
     </section>
