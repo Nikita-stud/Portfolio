@@ -1,7 +1,7 @@
 # My Portfolio Website
 
 My own portfolio website is for you to look through my progress and maybe eventually decide to get me onboard of whatever cool idea or project you have going on. The website focuses on the academic progress of my acquired skills.
-<br><br>
+
 ![Image of the upper part of the website](./images/portfolio-img.jpg)
 
 Explore the website by visiting the link - [My Portfolio](https://nikitas-portfolio.netlify.app/)
@@ -44,7 +44,6 @@ npm run start
 - Changing the images and how the react in the Selected Projects part in the middle of the page
 - Make the website respond better on mobile phones
 - Change the margins and sizes of some of the areas
-  <br>
 
 ## Contact
 
