@@ -12,37 +12,52 @@ Explore the website by visiting the link - [My Portfolio](https://nikitas-portfo
   <br>
 - Page build using JS, HTML and CSS with no all code being my own
 
-<h3>Built With</h3>
+## Built With
+
 - Visual Studio Code
 
-<h3>Getting Started</h3>
-<h4>Installing:</h4>
-<br>
-1.Clone the repo:
-git clone git@github.com:NoroffFEU/portfolio-1-example.git
-<br>
-Install the dependencies:
-##
-<tab><tab>npm install
+## Getting Started
 
-<h4>Running</h4>
+### Installing:
+
+1. Clone the repo:
+
+```bash
+git clone git@github.com:NoroffFEU/portfolio-1-example.git
+```
+
+<br>
+2. Install the dependencies:
+##
+```
+npm install
+```
+
+### Running
+
 To run the app, run the following commands:
 <br>
-npm run start
 
-<h3>Future Improvements</h3>
+```bash
+npm run start
+```
+
+## Future Improvements
+
 -Changing the images and how the react in the Selected Projects part in the middle of the page
 <br>
 -Make the website respond better on mobile phones
 <br>
 -Change the margins and sizes of some of the areas
 
-<h3>Contact</h3>
+## Contact
+
 You can always contact me though email or my phone number.
 
 nikita151998@gmail.com
 <br>
 +4745588474
 
-<h4>Acknowledgments</h4>
+### Acknowledgments
+
 I would like to thank my mentor Connor Obrien for giving me ideas on how to make the frame and images in the frame move together without using javascript.
