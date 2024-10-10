@@ -1,4 +1,4 @@
-My Portfolio Website
+#My Portfolio Website
 
 My own portfolio website is for you to look through my progress and maybe eventually decide to get me onboard of whatever cool idea or project you have going on. The website focuses on the academic progress of my acquired skills.
 
@@ -6,7 +6,7 @@ My own portfolio website is for you to look through my progress and maybe eventu
 
 Explore the website by visiting the link - [My Portfolio](https://nikitas-portfolio.netlify.app/)
 
-You can add some bullet points if you'd like to:
+#Key Features
 
 List item 1
 List item 2
