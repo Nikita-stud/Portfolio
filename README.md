@@ -1,8 +1,8 @@
 <h1>My Portfolio Website</h1>
 
 My own portfolio website is for you to look through my progress and maybe eventually decide to get me onboard of whatever cool idea or project you have going on. The website focuses on the academic progress of my acquired skills.
-<br>
-[Image of the upper part of the website](./images/portfolio-img.jpg)
+<br><br>
+![Image of the upper part of the website](./images/portfolio-img.jpg)
 
 Explore the website by visiting the link - [My Portfolio](https://nikitas-portfolio.netlify.app/)
 
@@ -15,15 +15,18 @@ Explore the website by visiting the link - [My Portfolio](https://nikitas-portfo
 -Visual Studio Code
 
 <h3>Getting Started</h3>
-Installing
-Clone the repo:
+<h4>Installing:</h4>
+<br>
+1.Clone the repo:
 git clone git@github.com:NoroffFEU/portfolio-1-example.git
-
+<br>
 Install the dependencies:
-npm install
+##
+<tab><tab>npm install
 
-Running
+<h4>Running</h4>
 To run the app, run the following commands:
+<br>
 npm run start
 
 <h3>Future Improvements</h3>
