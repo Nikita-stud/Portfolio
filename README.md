@@ -9,7 +9,6 @@ Explore the website by visiting the link - [My Portfolio](https://nikitas-portfo
 ## Key Features
 
 - Home Page displaying every aspect needed, being the only page available.
-  <br>
 - Page build using JS, HTML and CSS with no all code being my own
 
 ## Built With
@@ -28,8 +27,8 @@ git clone git@github.com:NoroffFEU/portfolio-1-example.git
 
 <br>
 2. Install the dependencies:
-##
-```
+
+```bash
 npm install
 ```
 
