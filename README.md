@@ -1,13 +1,14 @@
 <h1>My Portfolio Website</h1>
 
 My own portfolio website is for you to look through my progress and maybe eventually decide to get me onboard of whatever cool idea or project you have going on. The website focuses on the academic progress of my acquired skills.
-$~$
+<br>
 ![Image of the upper part of the website](./images/portfolio-img.jpg)
 
 Explore the website by visiting the link - [My Portfolio](https://nikitas-portfolio.netlify.app/)
 
 <h2>Key Features</h2>
--Home Page displaying every aspect needed, being the only page available. 
+-Home Page displaying every aspect needed, being the only page available.
+<br>
 -Page build using JS, HTML and CSS with no all code being my own
 
 <h3>Built With</h3>
@@ -32,13 +33,16 @@ Here you can detail any information you want to provide regarding contributing t
 
 <h4>Future Improvements</h4>
 -Changing the images and how the react in the Selected Projects part in the middle of the page
+<br>
 -Make the website respond better on mobile phones
+<br>
 -Change the margins and sizes of some of the areas
 
 <h5>Contact</h5>
 You can always contact me though email or my phone number.
 
 nikita151998@gmail.com
+<br>
 +4745588474
 
 <h6>Acknowledgments</h6>
