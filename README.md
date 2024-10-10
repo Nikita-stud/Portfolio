@@ -1,4 +1,4 @@
-<h1>My Portfolio Website</h1>
+# My Portfolio Website
 
 My own portfolio website is for you to look through my progress and maybe eventually decide to get me onboard of whatever cool idea or project you have going on. The website focuses on the academic progress of my acquired skills.
 <br><br>
@@ -6,13 +6,14 @@ My own portfolio website is for you to look through my progress and maybe eventu
 
 Explore the website by visiting the link - [My Portfolio](https://nikitas-portfolio.netlify.app/)
 
-<h2>Key Features</h2>
--Home Page displaying every aspect needed, being the only page available.
-<br>
--Page build using JS, HTML and CSS with no all code being my own
+## Key Features
+
+- Home Page displaying every aspect needed, being the only page available.
+  <br>
+- Page build using JS, HTML and CSS with no all code being my own
 
 <h3>Built With</h3>
--Visual Studio Code
+- Visual Studio Code
 
 <h3>Getting Started</h3>
 <h4>Installing:</h4>
