@@ -22,10 +22,9 @@ Explore the website by visiting the link - [My Portfolio](https://nikitas-portfo
 1. Clone the repo:
 
 ```bash
-git clone git@github.com:NoroffFEU/portfolio-1-example.git
+git clone https://github.com/Nikita-stud/Portfolio
 ```
 
-<br>
 2. Install the dependencies:
 
 ```bash
@@ -35,7 +34,6 @@ npm install
 ### Running
 
 To run the app, run the following commands:
-<br>
 
 ```bash
 npm run start
@@ -43,11 +41,10 @@ npm run start
 
 ## Future Improvements
 
--Changing the images and how the react in the Selected Projects part in the middle of the page
-<br>
--Make the website respond better on mobile phones
-<br>
--Change the margins and sizes of some of the areas
+- Changing the images and how the react in the Selected Projects part in the middle of the page
+- Make the website respond better on mobile phones
+- Change the margins and sizes of some of the areas
+  <br>
 
 ## Contact
 
