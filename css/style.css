@@ -126,8 +126,6 @@
   .main-img_container, .inner-frame_img, .inner-frame_img:hover, .main_header, .main-img_text-active, .carousel_header, .about_header, .project_img:hover{
     transition: 1s ease-out;
   }
-
-
   /* ----- Main Page Pictures -----*/
   .frame_img{
     background-image: url("../images/frame.png");
@@ -173,7 +171,6 @@
     cursor: pointer;
     opacity: 1;
   }
-
   /* ----- Main Page Header -----*/
   .main_header{
     z-index: 3;
@@ -186,7 +183,6 @@
   .main-header-active{
     display: none;
   }
-
   /* ----- Main Page Invisible Text After Click -----*/
   .left-main-img_text, .right-main-img_text{
     position: absolute;
@@ -218,86 +214,75 @@
     top: 6%;
     left: 57%;
   }
-  /* ----- Carousel -----*/
-  /* .carousel_container{
+   /* ----- About me  -----*/
+  .about-me_container{
+    background-image: 
+    linear-gradient(to bottom, rgba(15, 14, 14, 0) 0%,rgba(15, 14, 14, 0.3) 20%, rgba(15, 14, 14, 0.8) 40%, rgba(15, 14, 14, 1) 50%,rgba(15, 14, 14, 1) 60%, rgba(15, 14, 14, 1) 70%, rgba(15, 14, 14, 1) 100%);
     position: absolute;
-    top: 650px;
+    z-index: 4;
     width: 100%;
-    height: 450px;
-    background-color: rgba(240, 248, 255, 0.178);
-    z-index: 3;
-  } */
-  .carousel_header{
-    font-size: 2.5rem;
-    margin-left: 200px;
-    padding: 20px;
+    height: 1400px;
+    top: 87%;
   }
-    /* 
-  .carousel-frames{
+  .about_header{
     position: absolute;
-    height: 364px;
-    width: 100%;
-    z-index: 3;
-    top: 80%;
-    left: 0;
+    top: 40%;
+    left: 11%;
   }
-  .main-frame_img{
-    background-image: url("../images/carousel-frame.png");
-    width: 100%;
-    height: 100%;
-    position: absolute;
-    top: ;
-    left: 20%;
-  } */
 
 
 
 
-    /* ----- About me  -----*/
-    .about-me_container{
-      background-image: 
-      linear-gradient(to bottom, rgba(15, 14, 14, 0) 0%,rgba(15, 14, 14, 0.3) 20%, rgba(15, 14, 14, 0.8) 40%, rgba(15, 14, 14, 1) 50%,rgba(15, 14, 14, 1) 60%, rgba(15, 14, 14, 1) 70%, rgba(15, 14, 14, 1) 100%);
-      position: absolute;
-      z-index: 4;
-      width: 100%;
-      height: 1400px;
-      top: 87%;
-    }
-    .about_header{
-      position: absolute;
-      top: 40%;
-      left: 11%;
-    }
 
 
+
+
+
+
+  
   /* ----- Works Section  -----*/
   .projects_container{
     background-color: var(--black);
     width: 100%;
-    height: 3000px;
+    height: 2600px;
     padding: 11%;
   }
   .project_container > *{
     display: flex;
     flex-direction: row;
   }
-  .projects_header{
-    padding-bottom: 80px;
+  .project-name{
+    border-bottom: 1px solid var(--white);
+    display: flex;
+    justify-content: flex-end;
+    margin-top: 80px;
   }
-  .project_text{
-    margin-top: 50px;
+  .project-links_container{
+    padding: 0px 10px 35px 35px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 50px;
+  }
+  .project-links{
+    padding: 10px;
+    border-bottom: 1px solid var(--white);
+    color: var(--white);
+    display: flex;
+    font-size: var(--font-size-tablet-readable);
+    gap: 15px;
+  }
+  .project-links:hover{
+    border-bottom: 2px solid var(--white);
   }
   .project_text-progress{
-    margin: -50px 0 50px 0 ;
+    margin: -50px 0 0px 0 ;
+  }
+  .project_text{
+    margin: 25px 0 50px 0;
   }
   .project_container{
     width: 100%;
-    border-bottom: 1px solid var(--white);
-  }
-  .project-name{
-    margin-top: 50px;
-    display: flex;
-    justify-content: flex-end;
   }
   .project-frame{
     margin: 50px 0 ;
@@ -355,8 +340,11 @@
     background-color: var(--black);
     position: relative;
   }
+  .contact_header{
+    padding-bottom: 50px;
+  }
   .contact_text{
-    margin-top: 55px;
+    padding-bottom: 35px;
   }
   footer nav{
     margin-top: 90px;
