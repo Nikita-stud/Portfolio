@@ -1,7 +1,7 @@
 *{
   scroll-behavior: smooth;
   box-sizing: border-box;
-  font-family: sans-serif, Arial, Helvetica;
+  font-family: 'Times New Roman', Times, serif, Arial, Helvetica;
   text-decoration: none;
   list-style: none;
   margin: 0;
@@ -20,7 +20,7 @@
   --white: #F5F6F1;
   --black: rgba(15, 14, 14);
   --font-titles: "Julius Sans One";
-  --font-readable-text: sans-serif, Arial, Helvetica;
+  --font-readable-text:  'Times New Roman', Times, serif, Arial, Helvetica;;
   --font-size-tablet-titles: 2.5rem;
   --font-size-tablet-readable: 1.6rem;
   --font-size-desktop-titles: 3rem;
