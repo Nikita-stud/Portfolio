@@ -16,7 +16,6 @@
 .icon-big{
   font-size: 2.3rem;
 }
-
 :root{
   --white: #F5F6F1;
   --black: rgba(15, 14, 14);
@@ -27,11 +26,7 @@
   --font-size-desktop-titles: 3rem;
   --font-size-desktop-readable: 1.9rem;
 }
-
 /* ----- Everything Below is Desktop Version -----*/
-
-
-
 /* ----- Header -----*/
 .header_container{
   font-family: var(--font-readable-text);
@@ -64,8 +59,6 @@
   position: absolute;
   top: 35%;
 }
-
-
 /* ----- Main Page -----*/
 .main-img_wrapper{
   width: 100%;
@@ -85,7 +78,6 @@
   top: -50px;
   width: calc(100% + 100px);
 }
-
 /* ----- Main Page First Impression -----*/
 .span-message{
   display: inline;
@@ -93,19 +85,6 @@
   font-family: var(--font-titles);
 }
 
-
-
-
-
-
-
-
-/* ----- Error Message -----*/
-.displayError{
-  width: 100%;
-  height: 300px;
-  border: 2px solid red;
-}
 
 
 
@@ -123,7 +102,7 @@
     font-size: var(--font-size-tablet-readable);
     font-family: var(--font-readable-text);
   }
-  .main-img_container, .inner-frame_img, .inner-frame_img:hover, .main_header, .main-img_text-active, .about_header, .project_img:hover{
+  .main-img_container,.first-img:hover,.project_text,.project-name,.project_text-progress,.project-links,.about_text,.contact_text,.contact_header,.footer-data,.footer-aspects, .about-me_container, .inner-frame_img, .inner-frame_img:hover, .main_header, .main-img_text-active, .about_header, .project_img:hover{
     transition: 1s ease-out;
   }
   /* ----- Main Page Pictures -----*/
@@ -219,20 +198,24 @@
    /* ----- Carousel  -----*/
 
   .carousel_header{
-    position: relative;
-    padding: 50px;
+    display: none;
   }
   .carousel_img{
-    width: 100%;
-    z-index: 4;
+    z-index: 5;
+    margin-left: 30px;
+    margin-top: 30px;
+    background-size: contain;
     position: absolute;
-    background-size: contain; 
   }
   .first-img{
     background-image: 
-    linear-gradient(to right, rgba(15, 14, 14,0.6) 0%, rgba(15, 14, 14,0) 20%,rgba(15, 14, 14,0) 80%, rgba(15, 14, 14,0.6) 100%),
-    linear-gradient(to bottom, rgba(15, 14, 14,0.6) 0%, rgba(15, 14, 14,0) 20%,rgba(15, 14, 14,0) 85%, rgba(15, 14, 14,0.6) 100%),
-    url("../images/rainy-days.jpg");
+    radial-gradient(circle at center, rgba(0,0,0,0.3 ) 0%,rgba(0,0,0,0.4 ) 88%, rgba(0,0,0,0.3) 100%),
+    linear-gradient(to right, rgba(0,0,0,0.8) 0%, rgba(0,0,0,0) 20%,rgba(0,0,0,0) 80%, rgba(0,0,0,0.8) 100%),
+    linear-gradient(to bottom, rgba(0,0,0,0.8) 0%, rgba(0,0,0,0) 20%,rgba(0,0,0,0) 85%, rgba(0,0,0,0.8) 100%),
+    url("../images/calc.jpg");
+  }
+  .first-img:hover{
+    opacity: 0.8;
   }
   .second-img{
     
@@ -283,17 +266,6 @@
   .facts{
     margin-top: 10px;
   }
-
-
-
-
-
-
-
-
-
-
-
   /* ----- Works Section  -----*/
   .projects_container{
     background-color: var(--black);
@@ -350,6 +322,7 @@
     width: 400px;
     height: 300px;
     position: relative;
+    transition: 0.6s ease-out;
   }
   .project_img{
     position: absolute;
@@ -359,6 +332,7 @@
     height: 200px;
     top: 38px;
     left: 40px;
+    transition: 0.8s ease-out;
   }
   .project_img:hover{
     opacity: 0.8;
@@ -381,12 +355,6 @@
     linear-gradient(to bottom, rgba(15, 14, 14,0.6) 0%, rgba(15, 14, 14,0) 20%,rgba(15, 14, 14,0) 85%, rgba(15, 14, 14,0.6) 100%),
     url("../images/traveller-blog.jpg");
   }
-
-
-
-
-
-
   /* ----- Footer  -----*/
   .contact_container{
     padding: 11%;
@@ -423,10 +391,6 @@
     font-size: var(--font-size-tablet-readable);
     margin: 20px 0;
   }
-
-
-
-
 }
 
 
@@ -442,11 +406,9 @@
   p{
     font-size: var(--font-size-desktop-readable);
   }
-  .main-img_container, .main_header, .about_header{
+  .main-img_container,.project_img,.project_text,.project-name,.project_text-progress,.project-links,.about_text, .contact_text,.contact_header,.footer-data,.footer-aspects, .main_header, .about_header, .about-me_container{
     transition: 0.7s ease-in;
   }
-
-
   /* ----- Main Page Pictures -----*/
   .main-img_container{
     top: -50px;
@@ -457,58 +419,89 @@
     height: 600px;
     background-color: black;
   }
-    /* ----- Main Page Invisible Text After Click -----*/
-    .left-main-img_text{
-      background-image: none;
-      padding: 25px 10px 40px 25px;
-      width: 450px;
-      top: 9%;
-      left: 55%;
-    }
-    .right-main-img_text{
-      background-image: none;
-      padding: 50px 25px;
-      width: 450px;
-      top: 15%;
-      left: 55%;
-    }
-    /* ----- Main Page Header -----*/
+  /* ----- Main Page Invisible Text After Click -----*/
+  .left-main-img_text{
+    background-image: none;
+    padding: 25px 10px 40px 25px;
+    width: 450px;
+    top: 9%;
+    left: 55%;
+  }
+  .right-main-img_text{
+    background-image: none;
+    padding: 50px 25px;
+    width: 450px;
+    top: 15%;
+    left: 55%;
+  }
+  /* ----- Main Page Header -----*/
   .main_header{
     font-size: 3rem;
     top: 12%;
     right: 11%;
   }
   /* ----- Carousel -----*/
-
-
+  .carousel_header{
+    display: block;
+    position: absolute;
+    z-index: 4;
+  }
    /* ----- About me  -----*/
-      .about-me_container{
-        background-image: 
-        linear-gradient(to bottom, rgba(15, 14, 14, 0) 0%,rgba(15, 14, 14, 0.1) 20%, rgba(15, 14, 14, 0.6) 40%, rgba(15, 14, 14, 0.8) 50%,rgba(15, 14, 14, 1) 60%, rgba(15, 14, 14, 1) 70%, rgba(15, 14, 14, 1) 100%);  
-        top: 130%;    
-      }
-      .about_header{
-        top: 50%;
-        left: 11%;
-      }
-
-    /* ----- Footer  -----*/
-    .contact_container{
-      height: 700px;
-    }
-    .contact_text{
-      margin-top: 35px;
-    }
-    .footer-aspects{
-      font-size: var(--font-size-desktop-titles);
-    }
-    footer nav ul li i{
-      font-size: 2.2rem;
-      padding-right: 5px;
-    }
-    .footer-data{
-      font-size: var(--font-size-desktop-readable);
-      margin: 20px 0;
-    }
-
+  .about-me_container{
+    background-image: 
+    linear-gradient(to bottom, rgba(15, 14, 14, 0) 0%,rgba(15, 14, 14, 0.1) 20%, rgba(15, 14, 14, 0.6) 40%, rgba(15, 14, 14, 0.8) 50%,rgba(15, 14, 14, 1) 60%, rgba(15, 14, 14, 1) 70%, rgba(15, 14, 14, 1) 100%);  
+    top: 130%;    
+  }
+  .about_header{
+    top: 50%;
+    left: 11%;
+  }
+  /* ----- Works Section  -----*/
+  .projects_container{
+    height: 3450px;
+    padding-top: 500px;
+  }
+  .project-links_container{
+    padding: 0px 10px 0px 35px;
+    gap: 60px;
+  }
+  .project-links{
+    font-size: var(--font-size-desktop-readable);
+  }
+  .project_text-progress{
+    margin: -10px 0 0px 0 ;
+  }
+  .project_text{
+    margin: 35px 0 50px 0;
+  }
+  .project-frame{
+    transition: 0.8s ease-in;
+    margin: 80px 0;
+    width: 600px;
+    height: 350px;
+  }
+  .project_img{
+    width: 440px;
+    height: 280px;
+    top: 37px;
+    left: 45px;
+  }
+  /* ----- Footer  -----*/
+  .contact_container{
+     height: 700px;
+  }
+  .contact_text{
+    margin-top: 35px;
+  }
+  .footer-aspects{
+    font-size: var(--font-size-desktop-titles);
+  }
+  footer nav ul li i{
+    font-size: 2.2rem;
+    padding-right: 5px;
+  }
+  .footer-data{
+    font-size: var(--font-size-desktop-readable);
+    margin: 20px 0;
+  }
 }
