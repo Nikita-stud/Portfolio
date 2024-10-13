@@ -20,18 +20,31 @@
   --white: #F5F6F1;
   --black: rgba(15, 14, 14);
   --font-titles: "Julius Sans One";
-  --font-readable-text:  'Times New Roman', Times, serif, Arial, Helvetica;;
+  --font-readable-text:  'Times New Roman', Times, serif, Arial, Helvetica;
+  --font-size-mobile-titles:1.6rem;
+  --font-size-mobile-readable: 1.4rem;
   --font-size-tablet-titles: 2.5rem;
   --font-size-tablet-readable: 1.6rem;
   --font-size-desktop-titles: 3rem;
   --font-size-desktop-readable: 1.9rem;
 }
-.logo_container,.header_container,.header_container nav ul{
+h1,h2,h3,h4,h5,h6{
+  color: var(--white);
+  font-size: var(--font-size-mobile-titles);
+  font-family: var(--font-titles);
+}
+p{
+  color: var(--white);
+  font-size: var(--font-size-mobile-readable);
+  font-family: var(--font-readable-text);
+}
+.logo_container, p, h1,h2,h3,h4,h5,h5, .footer-data, .footer-aspects,.header_container,.header_container nav ul{
   transition: 0.7s ease-in;
 }
 /* ----- Header -----*/
 .header_container{
   font-family: var(--font-readable-text);
+  font-size: var(--font-size-mobile-readable);
   width: 100%;
   height: 120px;
   position: fixed;
@@ -105,19 +118,67 @@
 
 
 
+  /* ----- Footer  -----*/
+  .contact_container{
+    padding: 11%;
+    width: 100%;
+    height: 650px;
+    margin-top: -50px;
+    background-color: var(--black);
+    color: var(--white);
+    position: relative;
+  }
+  .contact_header{
+    padding-bottom: 50px;
+  }
+  .contact_text{
+    padding-bottom: 35px;
+  }
+  footer nav{
+    margin-top: 90px;
+    color: var(--white);
+  }
+  footer nav ul{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    gap: 20px;
+  }
+  .footer-aspects{
+    font-size: var(--font-size-mobile-titles);
+    font-family: var(--font-titles);
+  }
+  footer nav ul li i{
+    font-size: 1.5rem;
+    padding-right: 5px;
+  }
+  .footer-data{
+    font-family: var(--font-readable-text);
+    font-size: var(--font-size-mobile-readable);
+    margin: 20px 0;
+  }
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 @media (min-width:834px){
   h1,h2,h3,h4,h5,h6{
-    color: var(--white);
     font-size: var(--font-size-tablet-titles);
-    font-family: var(--font-titles);
   }
   p{
-    color: var(--white);
     font-size: var(--font-size-tablet-readable);
-    font-family: var(--font-readable-text);
   }
-  .main-img_container,.logo_container,.first-img:hover,.header_container nav ul,.project_text,.project-name,.project_text-progress,.project-links,.about_text,.contact_text,.contact_header,.footer-data,.footer-aspects, .about-me_container, .inner-frame_img, .inner-frame_img:hover, .main_header, .main-img_text-active, .about_header, .project_img:hover{
+  .main-img_container,p,h1,h2,h3,h4,h5,h5,.logo_container,.first-img:hover,.header_container nav ul,.project_text,.project-name,.project_text-progress,.project-links,.about_text,.contact_text,.contact_header,.footer-data,.footer-aspects, .about-me_container, .inner-frame_img, .inner-frame_img:hover, .main_header, .main-img_text-active, .about_header, .project_img:hover{
     transition: 1s ease-out;
   }
 /* ----- Header -----*/
@@ -441,40 +502,11 @@
     url("../images/traveller-blog.jpg");
   }
   /* ----- Footer  -----*/
-  .contact_container{
-    padding: 11%;
-    width: 100%;
-    height: 650px;
-    margin-top: -50px;
-    background-color: var(--black);
-    position: relative;
-  }
-  .contact_header{
-    padding-bottom: 50px;
-  }
-  .contact_text{
-    padding-bottom: 35px;
-  }
-  footer nav{
-    margin-top: 90px;
-    color: var(--white);
-  }
-  footer nav ul{
-    display: flex;
-    justify-content: space-between;
-  }
   .footer-aspects{
     font-size: var(--font-size-tablet-titles);
-    font-family: var(--font-titles);
-  }
-  footer nav ul li i{
-    font-size: 1.5rem;
-    padding-right: 5px;
   }
   .footer-data{
-    font-family: var(--font-readable-text);
     font-size: var(--font-size-tablet-readable);
-    margin: 20px 0;
   }
 }
 
@@ -491,7 +523,7 @@
   p{
     font-size: var(--font-size-desktop-readable);
   }
-  .main-img_container,.header_container nav ul,.project_img,.project_text,.project-name,.project_text-progress,.project-links,.about_text, .contact_text,.contact_header,.footer-data,.footer-aspects, .main_header, .about_header, .about-me_container{
+  .main-img_container,p,h1,h2,h3,h4,h5,h5,.header_container nav ul,.project_img,.project_text,.project-name,.project_text-progress,.project-links,.about_text, .contact_text,.contact_header,.footer-data,.footer-aspects, .main_header, .about_header, .about-me_container{
     transition: 0.7s ease-in;
   }
   /* ----- Header -----*/
@@ -588,7 +620,6 @@
   }
   footer nav ul li i{
     font-size: 2.2rem;
-    padding-right: 5px;
   }
   .footer-data{
     font-size: var(--font-size-desktop-readable);
