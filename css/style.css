@@ -41,6 +41,11 @@ p{
 .logo_container, p, h1,h2,h3,h4,h5,h5, .footer-data, .footer-aspects,.header_container,.header_container nav ul{
   transition: 0.7s ease-in;
 }
+.scrolled{
+  background-color: rgba(15, 14, 14, 0.9);
+  border-bottom: 1px solid var(--white);
+  transition: 0.5s ease-in;
+}
 /* ----- Header -----*/
 .header_container{
   font-family: var(--font-readable-text);
@@ -61,15 +66,6 @@ p{
 }
 .header_container nav ul li a ,.header_container nav ul{
   color: var(--white);
-}
-.header_container::before{
-  margin-top: -10px;
-  border-bottom: 2px solid var(--white);
-  content: "";
-  width: 82%;
-  position: absolute;
-  top: 100%;
-  left: 9%;
 }
 .logo_container{
   display: flex;
@@ -312,9 +308,22 @@ p{
   .main-img_container,p,h1,h2,h3,h4,h5,h5,.logo_container,.first-img:hover,.header_container nav ul,.project_text,.project-name,.project_text-progress,.project-links,.about_text,.contact_text,.contact_header,.footer-data,.footer-aspects, .about-me_container, .inner-frame_img, .inner-frame_img:hover, .main_header, .main-img_text-active, .about_header, .project_img:hover{
     transition: 1s ease-out;
   }
+  .scrolled{
+    border-bottom: 2px solid var(--white);
+    transition: 0.1s ease-in;
+  }
   /* ----- Header -----*/
   .header_container{
     height: 80px;
+  }
+  .header_container::before{
+    margin-top: -10px;
+    border-bottom: 2px solid var(--white);
+    content: "";
+    width: 82%;
+    position: absolute;
+    top: 100%;
+    left: 9%;
   }
   .header_container nav ul{
     justify-content: flex-end;
